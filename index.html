@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="./style/styles.css" />
+		<title>Курс</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header__inner container">
+				<a href="/" class="header__logo logo">
+					<img
+						class="logo__image"
+						src="./images/logo.png"
+						alt="Курс"
+						width="80"
+						height="32"
+						loading="lazy"
+					/>
+				</a>
+				<nav class="header__menu hidden-mobile">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Главная</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Услуги</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Кейсы</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">О компании</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Новости</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<button
+					class="header__button button button--transparent-header hidden-mobile"
+					type="button"
+				>
+					Связаться
+				</button>
+				<button
+					class="header__burger-menu burger-button visible-mobile"
+					type="button"
+					onclick="mobileOverlay.showModal()"
+				>
+					<span class="visually-hidden">Open navigation menu</span>
+				</button>
+			</div>
+		</div>
+
+		<main class="content">
+			<section class="section__hero">
+				<div class="container">
+					<div class="hero">
+						<div class="hero__title">
+							<p class="hero__upper-text">Официально зарегистрированный туроператор — РТО 021668</p>
+							<h1>Авторские туры на космодром Байконур и другие космические объекты</h1>
+							<p class="hero__down-text">
+								Туры в г. Байконур «под ключ»: от оформления пропуска и трансфера до фотографий с
+								космонавтами
+							</p>
+						</div>
+						<div class="hero__action">
+							<div class="hero__button-container">
+								<button class="header__button button button--white">Забронировать тур</button>
+								<button class="header__button button button--transparent">
+									Получить консультацию
+								</button>
+							</div>
+							<div class="hero__benefits-container">
+								<div class="hero__benefits-container__left">
+									<hr />
+									<p>Индивидуальные и групповые туры под ваш бюджет</p>
+								</div>
+								<div class="hero__benefits-container__right">
+									<hr />
+									<p>
+										Профессиональные гиды, современный транспорт и абсолютная безопасность в вашем
+										путешествии
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="content container">
+				<div class="section section__body container">
+					<div class="location">
+						<div class="location__info">
+							<div class="location__puddle-container">
+								<p class="puddle-bg">Находимся в г. Байконур</p>
+							</div>
+							<div class="location__title-container">
+								<h2>
+									Курс — <span class="text-blue">официальный туроператор,</span> который имеет все
+									необходимые разрешения для проведения экскурсий в г. Байконур.
+								</h2>
+								<p>
+									Каждый гид знает все о космонавтике и истории города. Вы узнаете реальные факты и
+									захватывающие истории, про которые не пишут в Википедии. 
+								</p>
+							</div>
+						</div>
+						<div class="location__image section">
+							<img src="./images/Group 11.png" alt="sample" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section__interesting-places section-blue">
+				<div class="container section">
+					<div class="interesting-places">
+						<div class="interesting-places__info">
+							<div class="interesting-places__puddle-container">
+								<p class="puddle-bg">Знаем все самые интересные места</p>
+							</div>
+							<div class="interesting-places__title-container">
+								<h2>
+									<span class="text-blue">Более 5 лет</span> мы организовываем туры в места и
+									локации, от которых замирает сердце.
+								</h2>
+								<p>
+									Раньше такое можно было увидеть только в фильмах или новостях. Теперь самые
+									грандиозные события мировой космонавтики доступны каждому.
+									<br />
+									<br />
+									Вы сможете увидеть не только завораживающий запуск настоящего космического
+									корабля, но и всю закулисную работу космонавтов: подготовку к старту, доклад
+									экипажа, проводы и встречи космонавтов.
+								</p>
+							</div>
+						</div>
+						<div class="interesting-places__images">
+							<div class="interesting-places__images-container">
+								<div class="interesting-places__image-small"></div>
+								<div class="interesting-places__image-big"></div>
+							</div>
+							<div class="interesting-places__images-container">
+								<div class="interesting-places__image-big"></div>
+								<div class="interesting-places__image-small"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="section__cards section-gray">
+				<div class="container section">
+					<div class="cards">
+						<hr />
+						<div class="cards__title">
+							<h2>
+								Более 20 туров и программ на главные события космодрома Байконур.
+								<span class="text-blue">Выбирайте свое космическое приключение</span>
+							</h2>
+						</div>
+						<div class="cards__container">
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<hr />
+						<div class="cards__container">
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__image"></div>
+								<div class="cards__text">
+									<div class="cards__info">
+										<h3>Тур на космодром Байконур</h3>
+										<p>
+											Экспедиция, в которой вам предстоит отыскать спускаемый аппарат с экипажем
+											космонавтов МКС и встретить тех, кто только что был на орбите
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section__promotions section-blue">
+				<div class="section__body container section">
+					<div class="promotions">
+						<div class="promotions__info">
+							<div class="promotions__puddle-container">
+								<p class="puddle-bg">Акции</p>
+							</div>
+							<div class="promotions__title-container">
+								<h2>
+									<span class="text-blue">Специальные предложения</span> от туроператора «Курс»
+								</h2>
+								<p></p>
+							</div>
+						</div>
+						<div class="promotions__container">
+							<div class="promotions__item">
+								<div class="promotions__text">
+									<div class="promotions__card-info">
+										<h3>Незабываемые впечатления для вашего ребенка — бесплатно!</h3>
+										<p>
+											При бронировании и оплате тура для двух взрослых, ребенок до 6 лет может
+											поехать в тур бесплатно (питание, проживание и транспорт оплачиваются
+											отдельно)
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+								<div class="promotions__circle-right">
+									<p>ребенок до <br /><span>6 лет</span><br />поездка в тур бесплатно</p>
+								</div>
+								<div class="promotions__image"></div>
+							</div>
+
+							<div class="promotions__item-alt">
+								<div class="promotions__text">
+									<div class="promotions__card-info">
+										<h3>Путешествовать вместе — дешевле!</h3>
+										<p>
+											Берите с собой в путешествие друзей и получайте скидку 10% от стоимости тура
+											для каждого участника. Акция действует для компании от 5 человек.
+										</p>
+									</div>
+									<button class="button">Подробнее</button>
+								</div>
+								<div class="promotions__circle-left">
+									<p>скидка<br /><span>-10%</span><br />для каждого участника</p>
+								</div>
+								<div class="promotions__image-alt"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-gray section__form">
+				<div class="container">
+					<div class="form">
+						<div class="form__title">
+							<h2>
+								Подберем тур или составим индивидуальную программу под ваши пожелания, бюджет и
+								время пребывания в городе
+							</h2>
+							<p>
+								Заполните форму и оставьте заявку. <br />Гид перезвонит вам, ответит на все вопросы
+								и поможет подобрать тур, который вам точно подойдет. <br />Или пишите нам в WhatsApp
+								или Telegram
+							</p>
+						</div>
+						<div class="form__input-conteiner">
+							<input class="input" type="text" placeholder="Введите ваше имя" />
+							<input class="input" type="text" placeholder="Введите номер телефона" />
+							<button class="button">Получить программу тура в PDF</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section section-gray section__advantages">
+				<div class="container">
+					<div class="advantages">
+						<div class="advantages__info">
+							<div class="advantages__puddle-container">
+								<p class="puddle-bg">Преимущества</p>
+							</div>
+							<div class="advantages__title-container">
+								<h2>
+									<b>Организация путешествия <span class="text-blue">”под ключ”</span> и максимальный комфорт</b>
+								</h2>
+
+								<div class="advantages__list">
+									<div class="advantages__item">
+										<h3>Поможем с документами</h3>
+										<p>Оформим все необходимые разрешения, визы и документы, без которых вы не сможете попасть в город</p>
+									</div>
+									<div class="advantages__item">
+										<h3>Профессиональные гиды</h3>
+										<p>Все гиды — это местные жители Байконура с опытом проведения экскурсий более 5 лет</p>
+									</div>
+									<div class="advantages__item">
+										<h3>Захватывающие экскурсии</h3>
+										<p>Авторская программа экскурсий с яркими событиями основана на реальных знаниях космонавтов, а не на статьях из интернета</p>
+									</div>
+									<div class="advantages__item">
+										<h3>Безукоризненная организация</h3>
+										<p>Гарантируем, что все пройдет так как запланировано — все намеченные экскурсии точно состоятся. Если пуск будет перенесен указом Роскосмоса — вернем 100% оплату за тур</p>
+									</div>
+									<div class="advantages__item">
+										<h3>Гарантия безопасности</h3>
+										<p>Несем ответственность за вашу безопасность и строго соблюдаем регламенты и требования по нахождению на режимных объектах</p>
+									</div>
+									<div class="advantages__item">
+										<h3>Разнообразный формат туров</h3>
+										<p>Вы можете выбрать тот формат, который вам по душе — индивидуальный тур, групповая экскурсия или корпоративный тур, чтобы отправиться со своими коллегами в космическое путешествие</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section__interesting-places section-gray">
+				<div class="container section">
+					<div class="interesting-places">
+						<div class="interesting-places__images">
+							<div class="interesting-places__images-container">
+								<div class="interesting-places__image-small"></div>
+								<div class="interesting-places__image-big"></div>
+							</div>
+							<div class="interesting-places__images-container">
+								<div class="interesting-places__image-big"></div>
+								<div class="interesting-places__image-small"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-blue section__reviews">
+				<div class="container">
+					<div class="reviews">
+						<div class="reviews__info">
+							<div class="reviews__puddle-container">
+								<p class="puddle-bg">Отзывы</p>
+							</div>
+							<div class="reviews__title-container">
+								<h2>
+									<span class="text-blue">Более 1000 человек</span>уже ощутили всю мощь космоса вместе с нами
+								</h2>
+								<p>Почитайте реальные отзывы некоторых из них:</p>
+							</div>
+						</div>
+						<div class="reviews__cards">
+							<div class="reviews__item">
+								<div class="reviews__user">
+									<img src="./images/Ellipse 1.png" alt="sample">
+									<div class="reviews__name-container">
+										<h3 class="">Имя Фамилия</h3>
+										<div class="reviews__stars">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="reviews__text">
+									<p>Экскурсия по городу Байконур в августе 2019 года была просто супер!!! Экскурсовод рассказала нам о своем городе.
+										Как идея о космосе возвела в бескрайних просторах пустынных степей гигантский Колос промышленности, науки, человеческой силы и воли.
+										На меня произвело сильное впечатление 
+										<br><br>
+										Ребят было очень круто побывать на таком запуске! Спасибо организаторам за такой теплый прием и организацию такого тура!!!</p>
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__user">
+									<img src="./images/Ellipse 2.png" alt="sample">
+									<div class="reviews__name-container">
+										<h3 class="">Имя Фамилия</h3>
+										<div class="reviews__stars">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="reviews__text">
+									<p>Экскурсия по городу Байконур в августе 2019 года была просто супер!!! Экскурсовод рассказала нам о своем городе.
+										Как идея о космосе возвела в бескрайних просторах пустынных степей гигантский Колос промышленности, науки, человеческой силы и воли.
+										На меня произвело сильное впечатление 
+										<br><br>
+										Ребят было очень круто побывать на таком запуске! Спасибо организаторам за такой теплый прием и организацию такого тура!!!</p>
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__user">
+									<img src="./images/Ellipse 1.png" alt="sample">
+									<div class="reviews__name-container">
+										<h3 class="">Имя Фамилия</h3>
+										<div class="reviews__stars">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+											<img src="icons/Star 1.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="reviews__text">
+									<p>Экскурсия по городу Байконур в августе 2019 года была просто супер!!! Экскурсовод рассказала нам о своем городе.
+										Как идея о космосе возвела в бескрайних просторах пустынных степей гигантский Колос промышленности, науки, человеческой силы и воли.
+										На меня произвело сильное впечатление 
+										<br><br>
+										Ребят было очень круто побывать на таком запуске! Спасибо организаторам за такой теплый прием и организацию такого тура!!!</p>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</section>
+
+
+			<section class="section section-gray section__alt-form">
+				<div class="container">
+					<div class="form">
+						<div class="form__title">
+							<h2>
+								Получите бесплатную консультацию от старшего гида
+							</h2>
+							<p>
+								Ответим на все вопросы, поможем подобрать тур или экскурсию, а также отправим детальную программу путешествия с описанием всех активностей и локаций
+								Или пишите нам в <a href="/">WhatsApp</a> или <a href="">Telegram</a>
+							</p>
+						</div>
+						<div class="form__input-conteiner">
+							<input class="input" type="text" placeholder="Введите ваше имя" />
+							<input class="input" type="text" placeholder="Введите номер телефона" />
+							<button class="button">Получить программу тура в PDF</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-dark">
+				<div class="container">
+					<div class="footer">
+						<div class="footer__info">
+							<div class="footer__puddle-container">
+								<p class="puddle-bg">Контакты</p>
+							</div>
+							<div class="footer__title-container">
+								<h2>
+									Находимся в г. Байконур.<br> Принимаем гостей<br> со всего мира
+								</h2>
+								<p>г. Байконур, ул. Осташева, д. 15</p>
+								<div class="footer__number">
+									<h3>+7(705)257-32-77</h3>
+									<h3>+7(961)123-92-99</h3>
+									<p>Принимаем звонки ежедневно с 10:00 до 20:00</p>
+								</div>
+								<button class="button">Перезвоните мне</button>
+							</div>
+						</div>
+						<hr>
+						<div class="footer__contact">
+							<div class="footer__logo">
+								<img src="./images/logo.png" width="99px" height="40px" alt="sample">
+								<p>© Все права защищены</p>
+							</div>
+							<div class="footer__links">
+								<ul>
+									<li>Главная</li>
+									<li>Услуги</li>
+									<li>Кейсы</li>
+									<li>О компании</li>
+									<li>Новости</li>
+									<li>Контакты</li>
+								</ul>
+							</div>
+							<div class="footer__location">
+								<ul>
+									<li>г. Байконур, ул. Осташева, д. 15</li>
+									<li>+7 (705) 257-32-77</li>
+									<li>+ 7 (961) 123- 92- 99</li>
+								</ul>
+							</div>
+							<div class="footer__copy">
+								<ul>
+									<li>Политика конфиденциальности</li>
+									<li><a href="">Сверстал Абзал Байтуринов</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button" type="submit">
+					<span class="visually-hidden">Close navigation menu</span>
+				</button>
+			</form>
+			<div class="mobile-overlay__body">
+				<ul class="mobile-overlay__list">
+					<li class="mobile-overlay__item">
+						<a href="/" class="mobile-overlay__link">Главная</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="/" class="mobile-overlay__link">Услуги</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="/" class="mobile-overlay__link">Кейсы</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="/" class="mobile-overlay__link">О компании</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="/" class="mobile-overlay__link">Новости</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="/" class="mobile-overlay__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+		
+	</body>
+</html>

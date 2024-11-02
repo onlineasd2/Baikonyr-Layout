@@ -1,0 +1,51 @@
+.section {
+	padding-block: var(--section-padding-y);
+
+	@include tablet {
+		padding-block: var(--section-mobile-padding-y);
+	}
+
+	@include mobile {
+		padding-block: var(--section-mobile-padding-y);
+	}
+
+	&__hero {
+		height: 100vh;
+		width: auto;
+		background-image: url('./../images/photo_2023-08-06_21-35-24.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: var(--color-light);
+	}
+
+	&-blue {
+		background-color: var(--color-light-blue) !important;
+	}
+
+	&-gray {
+		background-color: var(--color-gray) !important;
+	}
+
+	&-dark {
+		background-color: var(--color-dark);
+	}
+
+	&__form {
+		width: auto;
+		background-image: url('./../images/Frame 705.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: var(--color-light);
+	}
+
+	&__alt-form {
+		width: auto;
+		background-image: url('./../images/Frame 717.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: var(--color-light);
+	}
+
+
+}

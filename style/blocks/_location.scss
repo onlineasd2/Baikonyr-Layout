@@ -1,0 +1,51 @@
+.location {
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+
+        }
+    }
+
+    &__puddle-container {
+        @include tablet {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__title-container {
+        max-width: 775px;
+
+        & h2 {
+            font-size: 50px;
+            line-height: 95%;
+            font-weight: 600;
+
+            @include tablet {
+                font-size: 40px;
+                line-height: 95%;
+                font-weight: 600;
+            }
+
+            @include mobile {
+                font-size: 34px;
+                line-height: 95%;
+                font-weight: 600;
+            } 
+        }
+
+        & p {
+            color: var(--color-alt-gray);
+            padding-top: 30px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+}

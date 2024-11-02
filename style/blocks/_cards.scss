@@ -1,0 +1,107 @@
+.cards {
+
+    hr {
+        margin: var(--section-mobile-padding-y) 0;
+    }
+
+    &__title {
+        padding: 40px 0;
+        & h2 {
+            font-size: 50px;
+            line-height: 95%;
+            font-weight: 600;
+            @include tablet {
+                font-size: 34px;
+            }
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__item {
+        background-color: var(--color-light);
+        width: 360px;
+        height: 497px;
+        border-radius: var(--border-radius-large);
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+            height: auto;
+        }
+
+        button {
+            font-size: 13px;
+            padding: 13px 25px;
+            max-width: 122px;
+        }
+    }
+
+    &__image {
+        width: 360px;
+        height: 200px;
+        background-image: url('./../images/Rectangle 43.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include tablet {
+            width: 100%;
+            height: 300px;
+        }
+
+        @include tablet {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    &__info {
+        height: 212px;
+            
+        @include tablet {
+            height: auto;
+            padding: 20px 0;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+
+            @include tablet {
+                width: 100%;
+            }        
+        }
+
+        h3 {
+            font-size: 26px;
+            line-height: 100%;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 150%;
+            font-weight: 400;
+        }
+    }
+
+
+}

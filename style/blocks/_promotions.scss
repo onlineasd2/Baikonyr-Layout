@@ -1,0 +1,264 @@
+.promotions {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+    }
+
+    &__puddle-container {
+        @include tablet {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__title-container {
+        max-width: 721px;
+
+        & h2 {
+            font-size: 50px;
+            line-height: 95%;
+            font-weight: 600;
+
+            @include tablet {
+                font-size: 40px;
+                line-height: 95%;
+                font-weight: 600;
+            }
+
+            @include mobile {
+                font-size: 34px;
+                line-height: 95%;
+                font-weight: 600;
+            } 
+        }
+
+        & p {
+            color: var(--color-alt-gray);
+            padding-top: 30px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color-light);
+        height: 400px;
+        
+        @include tablet {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            position: relative;
+        }
+
+        button {
+            font-size: 13px;
+            padding: 13px 25px;
+            max-width: 122px;
+        }
+
+        &-alt {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            position: relative;   
+
+            button {
+                font-size: 13px;
+                padding: 13px 25px;
+                max-width: 122px;
+            }
+
+            @include tablet {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column-reverse;
+            }         
+        }
+    }
+
+    &__image {
+        width: 773px;
+        height: 100%;
+        background-image: url('./../images/Rectangle 43.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include tablet {
+            width: 100%;
+            height: 240px;
+        }
+
+        &-alt {
+            width: 773px;
+            height: 100%;
+            background-image: url('./../images/Rectangle 63.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+
+            @include tablet {
+                width: 100%;
+                height: 240px;
+            }
+            
+            &__text {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 20px;
+                background-color: var(--color-light);
+                max-width: 390px;
+
+                @include tablet {
+                   width: 100%;
+                }
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--color-light);
+        max-width: 390px;
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+
+    &__card-info {
+            
+        @include tablet {
+            height: auto;
+            padding: 20px 0;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+
+            @include tablet {
+                width: 100%;
+            }        
+        }
+
+        h3 {
+            font-size: 26px;
+            line-height: 100%;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 150%;
+            font-weight: 400;
+        }
+    }
+
+    &__circle-right {
+        position: absolute;
+        background-color: var(--color-light);
+        border-radius: 50%;
+        width: 96px;
+        height: 96px;
+        font-size: 10px;
+        text-align: center;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-top: 15px;
+
+        @include tablet {
+            top: 0;
+            width: 70px;
+            height: 70px;
+            font-size: 7px;
+        }
+
+        @include mobile {
+            font-size: 7px;
+        }
+
+        span {
+            font-size: 28px;
+            color: var(--color-accent);
+            font-weight: 600;
+
+            @include tablet {
+                top: 0;
+                width: 70px;
+                height: 70px;
+                font-size: 20px;
+            }
+
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__circle-left {
+        position: absolute;
+        background-color: var(--color-light);
+        border-radius: 50%;
+        width: 96px;
+        height: 96px;
+        font-size: 10px;
+        text-align: center;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-left: 15px;
+
+        @include tablet {
+            right: 0;
+            left: auto;
+            top: 0;
+            margin-right: 15px;
+            width: 70px;
+            height: 70px;
+            font-size: 7px;
+        }
+        
+        @include mobile {
+            font-size: 7px;
+        }
+
+        span {
+            font-size: 28px;
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+    }
+}

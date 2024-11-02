@@ -1,0 +1,52 @@
+.header {
+    position: absolute;
+    padding-top: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    @include desktop {
+        padding: 0 10px;
+    }
+
+
+    @include desktop {
+        padding-top: 18px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+        background-color: var(--color-light);
+        padding: 7px 20px;
+        border-radius: var(--border-radius-large);
+        max-width: var(--container-width);
+
+        &__image {
+            flex-shrink: 0;
+        }
+    }
+
+    &__menu {
+        font-size: 12px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+
+            @include desktop {
+                column-gap: 16px;
+            }
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            height: 48px;
+        }
+    }
+    
+}
